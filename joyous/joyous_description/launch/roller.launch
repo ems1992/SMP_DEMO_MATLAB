@@ -1,0 +1,8 @@
+<launch>
+  <param name="robot_description" command="cat $(find joyous_description)/urdf/joyous.xml" />
+  <node name="vis" pkg="rviz" type="rviz" args="-d $(find joyous_description)/config/joyous.rviz" />
+  <node name="urg" pkg="urg_node" type="urg_node">
+    <param name="serial_port" value="/dev/ttyACM0" />
+    <param name="frame_id" value="servo" />
+  </node>
+</launch>
