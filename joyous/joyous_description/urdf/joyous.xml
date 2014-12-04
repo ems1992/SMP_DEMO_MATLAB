@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+
+<robot name="roll">
+  <link name="servo">
+    <origin xyz="0 0 0.03" />
+    <collision name="servo_collision">
+       <origin xyz="0 0 0" />
+      <geometry>
+        <box size="0.05 0.05 0.089" />
+      </geometry>
+    </collision>
+    <visual name="servo_visual">
+       <origin xyz="0 0 0" />
+      <geometry>
+        <box size="0.05 0.05 0.089" />
+      </geometry>
+    </visual>
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="11.346190718196" />
+      <inertia ixx="0.173190019" iyy="0.121115819" izz="0.137943723" iyz="-0.000155927" ixz="0.00286251" ixy="2.8705e-05" />
+    </inertial>
+  </link>
+</robot>
